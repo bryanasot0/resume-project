@@ -1,4 +1,3 @@
-
 /*
 ===============================================================================
 Start CSS Reset
@@ -17,48 +16,129 @@ Start CSS Reset
     box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 /*
 ===============================================================================
@@ -66,81 +146,222 @@ End CSS Reset
 ===============================================================================
 */
 body {
-    margin: 0px;
-    background-color: #b8a2e2;
-    font-family: "PT Serif", serif;
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0px;
+    background-color: #BA87FE;
+}
+
+b {
+    font-weight: 725;
 }
 
 header,
-footer{
+footer {
     overflow: hidden;
-    color: #ffffff
+    color: #ffffff;
 }
 
-header h1{
+header h1 {
     float: left;
     width: fit-content;
-    font-size: 48px;
-    letter-spacing: 1px;
-    padding: 40px 0 20px 0;
-    border-top: 4px solid #FFF5AF;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 20px 0 0 0;
+    font-size: 44px;
+    border-top: 4px solid #FFF37C;
 }
 
 header h2 {
     font-size: 24px;
     padding: 40px 0 20px 0;
+    white-space: nowrap;
     text-align: right;
 }
+
 header a {
     float: right;
     display: block;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
-    background-color: #b8a2e2;
+    background-color: #BA87FE;
     text-decoration: none;
 }
 
 header a.active {
-    background-color: #FFF5AF;
-    color: #b8a2e2;
+    background-color: #FFF37C;
+    color: #BA87FE;
 }
 
 header a:hover {
-    background-color: black;
+    background-color: #000000;
     color: #ffffff;
 }
 
-header, 
-footer, 
+header,
+footer,
 article {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    padding: 0 15% 0 15%;
 }
 
 article {
     background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 22px;
 }
 
-footer h1 a{
+article h1 {
+    width: 33%;
+    font-size: 54px;
+    color: #FFF37C;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fFFF37C;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #585858;
+    border-bottom: 1.25px solid #585858;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin-top: 20px;
+}
+
+article p.dates {
+    float: right;
+}
+
+article h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+article h4 {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+article ul {
+    list-style: inside;
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: antiquewhite;
+    padding: 10px;
+    min-height: 350px;
+}
+
+.content h3 {
+    text-transform: none;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+footer {
     font-size: 12px;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-footer a{
+footer > h1 {
+    float: left;
+    text-transform: uppercase;
+}
+
+footer a {
     float: right;
     color: #ffffff;
     text-decoration: none;
-    padding: 0 20px 0 20 px;
+    padding: 0 20px 0 20px;
 }
 
-footer a.active{
-    color: #FFF5AF;
+footer a.active {
+    color: #fFFF37C;
 }
-footer a:hover{
-    color: black;
+
+footer a:hover {
+    color: #000000;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #FFF37C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #000000;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%
+    }
+
+    header a{
+        float: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }

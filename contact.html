@@ -24,7 +24,38 @@
 <!-- Main -->
 
 <article>
-    <h2>About Me:</h2>
+    <h3>Contact Form</h3>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+    
+        <label for="email">Email</label>
+        <input type="text" 
+             id="email" 
+             name="email" 
+             placeholder="name@example.com"
+         />
+
+        <label for="subject">Subject</label>
+        <input type="text" 
+             id="subject" 
+             name="subject" 
+             placeholder="SUBJECT"
+         />
+    
+        <label for="body">Body</label>
+        <textarea 
+            id="body" 
+            name="body" 
+            placeholder="Your message here..." 
+            style="height:200px"
+        ></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
 
     <p>
         
