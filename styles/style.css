@@ -180,10 +180,12 @@ header h2 {
     white-space: nowrap;
     text-align: right;
 }
+nav {
+    display: flex;
+    justify-content: right;
+}
 
-header a {
-    float: right;
-    display: block;
+nav a {
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
@@ -191,19 +193,20 @@ header a {
     text-decoration: none;
 }
 
-header a.active {
+nav a.active {
     background-color: #FFF37C;
     color: #BA87FE;
 }
 
-header a:hover {
+nav a:hover {
     background-color: #000000;
     color: #ffffff;
 }
 
 header,
-footer,
-article {
+nav,
+article, 
+footer {
     padding: 0 15% 0 15%;
 }
 
@@ -219,7 +222,7 @@ article h1 {
     font-size: 54px;
     color: #FFF37C;
     padding-bottom: 2px;
-    border-bottom: 2px solid #fFFF37C;
+    border-bottom: 2px solid #FFF37C;
     margin-bottom: 20px;
     line-height: 1;
 }
@@ -312,7 +315,7 @@ footer a {
 }
 
 footer a.active {
-    color: #fFFF37C;
+    color: #FFF37C;
 }
 
 footer a:hover {
@@ -348,15 +351,22 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
+@media screen and (max-width: 1150px) {
+    header h2 {
+        clear: left;
+        text-align: unset;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .column {
         width: 50%
     }
 
-    header a{
-        float: none;
-        display: flex;
+    nav {
+        justify-content: unset;
         flex-direction: column;
+        padding: 0;
     }
 }
 
